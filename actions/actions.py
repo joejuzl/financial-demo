@@ -724,6 +724,15 @@ class ActionSessionStart(Action):
         # add `action_listen` at the end
         events.append(ActionExecuted("action_listen"))
 
+        print("***************************************")
+        print(events)
+        for e in events:
+            print(e)
+        logger.error("**************************************")
+        logger.error(events)
+        for e in events:
+            logger.error(e)
+
         return events
 
 
